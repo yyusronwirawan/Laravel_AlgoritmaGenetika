@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>E-Voting</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/icons/logo.png" alt="" width="30" /><span class="text-1000 fs-1 ms-2 fw-medium"><span class="fw-bold">E</span>-Voting</span></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="vote.html">Vote</a></li>
+                        <li class="nav-item"><a class="nav-link" href="perolehan-suara.html">Perolehan Suara</a></li>
+                    </ul>
+                    <form class="d-flex py-3 py-lg-0">
+                        <!-- <button class="btn btn-link text-1000 fw-medium order-1 order-lg-0" type="button">Sign in</button>
+                        <button class="btn btn-outline-danger rounded-pill order-0" type="submit">Sign Up</button> -->
+                        <button class="btn btn-outline-danger rounded-pill order-0" type="submit">Masuk</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="pb-1">
+            <div class="container">
+                <div class="row flex-center">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="fw-medium" style="text-transform:uppercase;">Hasil Perhitungan Suara Calon Ketua OSIS SMAN 5 Kota Tangerang</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-4">
+            <div class="container">
+                <div class="row justify-content-evenly">
+                    <div class="col-md-3 col-sm-12 card text-center py-5 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white fw-bold">1</div>
+                        <img src="assets/img/default-150x150.png" class="img-fluid mt-2" alt="photo-kandidat">
+                        <div class="card-body">
+                            <h5>Gilang Saefullah</h5>
+                            <div class="row">
+                                <a href="#" class="col-12 btn btn-primary rounded-3 btn-block mt-2" data-bs-toggle="modal" data-bs-target="#vote-1">Vote</a>
+                                <a href="#" class="col-12 btn btn-outline-primary rounded-3 btn-block mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop-1">Lihat Detail</a>
+                                <!-- Modal Vote -->
+                                <div class="modal fade" id="vote-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-md">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <h3 class="modal-title mb-4" id="staticBackdropLabel">Apakah Anda Yakin?</h3>
+                                                <div class="row justify-content-evenly">
+                                                    <button type="button" class="col-md-5 rounded-3 btn btn-primary">Ya, lanjut memilih</button>
+                                                    <button type="button" class="col-md-5 rounded-3 btn btn-outline-danger" data-bs-dismiss="modal">Tidak, ada perubahan</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Detail -->
+                                <div class="modal fade" id="staticBackdrop-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="staticBackdropLabel">Detail Kandidat</h3>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row g-0">
+                                                    <div class="col-md-3">
+                                                        <img src="assets/img/default-150x150.png" class="img-fluid rounded-start" alt="photo-kandidat">
+                                                    </div>
+                                                    <div class="col-md-9 text-start">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="col-4">Nama Lengkap</th>
+                                                                    <th scope="col-8">Gilang Saefullah</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Nomor Urut</th>
+                                                                    <th scope="col-8">01</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Visi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Misi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 card text-center py-5 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white fw-bold">2</div>
+                        <img src="assets/img/default-150x150.png" class="img-fluid mt-2" alt="photo-kandidat">
+                        <div class="card-body">
+                            <h5>Aldin Munawar</h5>
+                            <div class="row">
+                                <a href="#" class="col-12 btn btn-primary rounded-3 btn-block mt-2">Vote</a>
+                                <a href="#" class="col-12 btn btn-outline-primary rounded-3 btn-block mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">Lihat Detail</a>
+                                <!-- Modal Detail -->
+                                <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="staticBackdropLabel">Detail Kandidat</h3>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row g-0">
+                                                    <div class="col-md-3">
+                                                        <img src="assets/img/default-150x150.png" class="img-fluid rounded-start" alt="photo-kandidat">
+                                                    </div>
+                                                    <div class="col-md-9 text-start">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="col-4">Nama Lengkap</th>
+                                                                    <th scope="col-8">Aldin Munawar</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Nomor Urut</th>
+                                                                    <th scope="col-8">02</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Visi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Misi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 card text-center py-5 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white fw-bold">3</div>
+                        <img src="assets/img/default-150x150.png" class="img-fluid mt-2" alt="photo-kandidat">
+                        <div class="card-body">
+                            <h5>Krisna Tri Anggara</h5>
+                            <div class="row">
+                                <a href="#" class="col-12 btn btn-primary rounded-3 btn-block mt-2">Vote</a>
+                                <a href="#" class="col-12 btn btn-outline-primary rounded-3 btn-block mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">Lihat Detail</a>
+                                <!-- Modal Detail -->
+                                <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="staticBackdropLabel">Detail Kandidat</h3>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row g-0">
+                                                    <div class="col-md-3">
+                                                        <img src="assets/img/default-150x150.png" class="img-fluid rounded-start" alt="photo-kandidat">
+                                                    </div>
+                                                    <div class="col-md-9 text-start">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="col-4">Nama Lengkap</th>
+                                                                    <th scope="col-8">Krisna Tri Anggara</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Nomor Urut</th>
+                                                                    <th scope="col-8">03</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Visi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="col-4">Misi</th>
+                                                                    <th scope="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="bg-200 pt-5 pb-0">
+            <div class="container">
+                <div class="row">
+                    <hr class="opacity-25" />
+                    <div class="text-400 text-center">
+                        <p>Copyright&nbsp;
+                            <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F53838" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z">
+                                </path>
+                            </svg>
+                            &nbsp;by&nbsp;<a class="text-900" href="https://themewagon.com/" target="_blank">Gilang Saefullah</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+</body>
+
+</html>

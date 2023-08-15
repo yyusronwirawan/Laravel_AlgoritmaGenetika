@@ -1,0 +1,11 @@
+a {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+/* .layout-fixed .main-sidebar-custom .sidebar {
+  height: calc(100% - ((4rem + 4rem) + 1px));
+} */
+
+.layout-fixed .main-sidebar-custom .sidebar-custom {
+  margin-top: -0.5rem;
+}

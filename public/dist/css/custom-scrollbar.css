@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Customize Scrollbar
+--------------------------------------------------------------*/
+/* Body Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #86bad8;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 245, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #86bad8;
+}
+
+/* Sidebar Scroll */
+.os-theme-dark>.os-scrollbar, .os-theme-light>.os-scrollbar {
+  width: 8px;
+  background: rgb(0, 245, 255, 0.1);
+}
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track, .os-theme-light>.os-scrollbar>.os-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 245, 255, 0.3);
+  border-radius: 5px;
+}
+
+.os-theme-light>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+  background: rgb(0, 245, 255, 0.3);
+}
